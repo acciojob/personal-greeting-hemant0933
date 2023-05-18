@@ -8,8 +8,8 @@ const App = () => {
 
   return (
     <div>
-      <p>Enter your name:</p><br/><br/>
-       <input type="text" onChange={(e) => setName(e.target.value) } />
+      <p>Enter your name:</p><br/>
+       <input type="text" value={name} onChange={(e) => setName(e.target.value) } />
 
        <p>Hello {name}!</p>
     </div>
